@@ -1,0 +1,263 @@
+body {
+  background-color: blue;
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+body{
+    background-color: antiquewhite;
+    color: black;
+}
+
+body{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: antiquewhite;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr minmax(60px, 100px);
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "main item4"
+    "footer footer"
+    ;
+    gap: 10px;
+    padding: 10px;
+}
+
+.item1 {
+    grid-area: header;
+    background-color: #93521a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item2 {
+    grid-area: nav;
+    background-color: #f2c994;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.item2 a.nav-btn {
+    background-color: antiquewhite;
+    color: #93521a;
+    border-radius: 5px;
+    border: 3px ridge;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    flex: 1 1 150px;
+    text-align: center;
+}
+
+.item2 a.nav-btn:hover {
+    background-color: #4b2c28;
+    color: #f2c994;
+}
+
+.item3 {
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px;
+    box-shadow: 0 0 10px black;
+    padding: 20px;
+}
+
+.imagen-bmw,
+.imagen-audi,
+.imagen-mercedes{
+    width: 370px;
+    height: 270px; 
+    object-fit: cover;
+}
+
+.BMW-container,
+.Audi-container,
+.Mercedes-container{
+    transition: 0.3s;
+    text-align: center;
+    max-width: 370px;
+    width: 90%;
+}
+
+.BMW-container:hover,
+.Audi-container:hover,
+.Mercedes-container:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.BMW-texto,
+.Audi-texto,
+.Mercedes-texto{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.item4 {
+    background-color: #f2c994;
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.instagram,
+.facebook,
+.x,
+.linkedin {
+    width: 50px;
+    height: auto; 
+}
+
+.item5 {
+    grid-area: footer;
+    background-color: #93521a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.formulario-contacto {
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 auto;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    padding: 10px;
+    border: 2px solid #93521a;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.formulario-contacto button {
+    background-color: #93521a;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formulario-contacto button:hover {
+    background-color: #4b2c28;
+}
+
+.subtitulo{
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+.texto{
+    text-align: center;
+}
+
+.TestDrive-container {
+    width: 100%;
+    max-width: 100%;
+    margin: auto auto;
+    padding: 20px;
+    background-color: #f2c994;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.subtitulo {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: underline;
+    color: #4b2c28;
+}
+
+.formulario-testdrive {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario-testdrive label {
+    font-weight: bold;
+    color: #4b2c28;
+}
+
+.formulario-testdrive input,
+.formulario-testdrive select {
+    padding: 10px;
+     border: 2px solid #93521a;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fffaf2;
+}
+
+.formulario-testdrive button {
+    padding: 12px;
+    background-color: #93521a;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario-testdrive button:hover {
+    background-color: #4b2c28;
+}
+
+.servicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.servicios:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.servicios h3 {
+  color: #93521a;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.servicios p {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.3;
+  color: #444;
+}
